@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cheshire Home Kyrenia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4b5467;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #f57e33;
+            padding: 15px;
+            text-align: right;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+
+        .contact-section {
+            background-color: white;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contact-form, .contact-info {
+            background-color: #f9d8cc;
+            padding: 30px;
+            border-radius: 10px;
+            width: 45%;
+        }
+
+            .contact-form h2, .contact-info h2 {
+                color: #4b5467;
+            }
+
+            .contact-form input, .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .contact-form button {
+                background-color: #f57e33;
+                color: white;
+                padding: 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .contact-info address {
+                color: #4b5467;
+                line-height: 1.6;
+            }
+
+        footer {
+            background-color: #4b5467;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .footer-content div {
+                width: 30%;
+            }
+
+            .footer-content h3 {
+                margin-bottom: 20px;
+            }
+
+        .subscribe input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 70%;
+        }
+
+        .subscribe button {
+            padding: 10px;
+            background-color: #f57e33;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Cheshire Home Kyrenia Logo">
+    </header>
+
+    <nav>
+        <a href="./CheshireHomeHTML.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Donate</a>
+    </nav>
+
+    <div class="contact-section">
+        <div class="contact-form">
+            <h2>Send Me A Message</h2>
+            <form>
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Phone" required>
+                <textarea placeholder="Your Message here..." rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Address</h2>
+            <address>
+                Cheshire Home Kyrenia<br>
+                Guzelyurt Mahallesi No:6, Kyrenia<br>
+                Cyprus<br>
+                Location: Next to Martyr's Monument, opposite<br>
+                Akpinar Mansion.<br>
+                <br>
+                Email: contact@cheshirekyrenia.com
+            </address>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Cheshire Home Kyrenia</h3>
+                <p>&copy; 2024 Cheshire Home Kyrenia. All Rights Reserved.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="./CheshireHomeHTML.html">Home</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <form class="subscribe">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
