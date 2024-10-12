@@ -152,12 +152,10 @@
 .informational-blocks{
     display: flex;
     justify-content: center;
-    padding: 5%;
     gap: 20px;
     
     flex-direction: row;
     align-items: center;
-    margin-left: 3%
 }
 
 .informational-blocks-images {
@@ -205,7 +203,6 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 650px;
-    padding: 0 5%;
     height: 50%;
     align-items: flex-start;
 }
@@ -246,14 +243,10 @@
 
 .ESK-arts-production-images img {
     width: 40vw;
+    display: block;
 }
-
-
-
-.informational-blocks-cards {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 5vh
+.mobile-ESK-arts-production-images img {
+    display: none;
 }
 
 .text-header-orange {
@@ -280,7 +273,6 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     text-align: left;
     max-width: 300px;
 }
@@ -350,7 +342,6 @@
 .causes-titles {
     text-align: left; /* Ensure text is aligned to the left */
     margin-left: 0; /* Removes any default margin on the left */
-    padding-left: 20px; /* Optional: Adds a bit of padding for spacing */
 }
 .latest-causes-card-donate{
     flex-direction: column;
@@ -749,17 +740,18 @@ a.footer-link:visited {
     
     
     
+    .body-block-1 {
+        padding: 5%;
+        box-sizing: border-box;
+    }
     
-    
-    .informational-blocks{
+    .informational-blocks {
         display: flex;
         justify-content: center;
-        padding: 5%;
         gap: 20px;
-        
         flex-direction: row;
         align-items: center;
-        margin-left: 3%
+        margin-bottom: 8vh;
     }
     
     .informational-blocks-images {
@@ -788,13 +780,12 @@ a.footer-link:visited {
         flex-direction: column;
         justify-content: space-between;
         max-width: 650px;
-        padding: 0 5%;
         height: 50%;
         align-items: flex-start;
     }
     
     .text-header {
-        margin-bottom: 20vh;
+        margin-bottom: 5vh;
     }
 
     .text-header span {
@@ -804,17 +795,18 @@ a.footer-link:visited {
         color: #5d5b5a;
     }
     
-    .text-title h1 {
-        font-size: 5vw;
-        color: #333;
+    .text-title{
+        font-size: 12vw;
+        color: #333; 
         margin-bottom: 15px;
     }
     
-    .text-description p span{
-        font-size: 18px;
+    .text-description {
+        font-family: montserrat;
+        font-size: 4vw;
         line-height: 1.6;
         color: #555;
-        margin-bottom: 20px;
+        margin-bottom: 5vh;
     }
     
     .general-button {
@@ -835,16 +827,13 @@ a.footer-link:visited {
         width: 40vw;
         display: none;
     }
-    .mobile-ESK-arts-production-images{
+    .mobile-ESK-arts-production-images img{
         display: block;
+        height: auto;
+        max-width: 100%;
+        padding: 5%;
     }
     
-    
-    .informational-blocks-cards {
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 5vh
-    }
     
     .text-header-orange {
         font-size: 18px;
@@ -856,17 +845,20 @@ a.footer-link:visited {
     .latest-causes-cards {
         display: flex;
         gap: 2%;
+        flex-wrap: wrap;
         justify-items: center;
         justify-content: center;
+        
     }
     
     .latest-causes-card {
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
         text-align: left;
         max-width: 300px;
+        margin-block: 8%;
+        padding: 7%;
     }
     
     .latest-causes-card-image img {
@@ -925,6 +917,10 @@ a.footer-link:visited {
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        
     }
     
         .general-button:hover {
@@ -934,7 +930,6 @@ a.footer-link:visited {
     .causes-titles {
         text-align: left; /* Ensure text is aligned to the left */
         margin-left: 0; /* Removes any default margin on the left */
-        padding-left: 20px; /* Optional: Adds a bit of padding for spacing */
     }
     .latest-causes-card-donate{
         flex-direction: column;
@@ -946,7 +941,7 @@ a.footer-link:visited {
     
     
     .our-testimonials {
-        padding: 2%;
+        padding: 10%;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -966,7 +961,7 @@ a.footer-link:visited {
     .our-testimonials-quote-author {
         margin-top: 5vh;
         margin-bottom: 5vh;
-        font-family: 'Playfair Display', Times, serif;
+        font-family: montserrat;
     }
     
     .our-testimonials-quote {
@@ -979,7 +974,8 @@ a.footer-link:visited {
     }
     
     .our-testimonials-quote-text {
-        width: 30vw;
+        max-width: 100%;
+        width: auto;
     }
     
     
@@ -1030,8 +1026,8 @@ a.footer-link:visited {
         align-items: center;
         justify-content: center;
         text-align: center;
-        min-width: 20%; /* Prevents cards from getting too small */
-        max-width: 30%; /* Prevents cards from getting too wide */
+        min-width: 45%; /* Prevents cards from getting too small */
+        max-width: 100%; /* Prevents cards from getting too wide */
         margin-bottom: 3%; /* Space below cards for small screens */
     }
     
@@ -1067,6 +1063,7 @@ a.footer-link:visited {
         padding-bottom: 5%;
         padding-left: 12%;
         padding-right: 12%;
+        flex-wrap: wrap;
     }
     
     .footer-logo {
@@ -1075,16 +1072,18 @@ a.footer-link:visited {
         color: #E77B3A;
         font-family: montserrat;
         gap: 15%;
+        display: none;
     }
     
     .footer-logo-text {
         font-size: 0.6rem;
     }
     
-    .footer-quick-link-title {
+    .footer-quick-link-title h5{
         color: white;
         font-family: 'Playfair Display', Times, serif;
         margin-bottom: 3vh;
+        text-align: left;
     }
     
     .footer-link {
