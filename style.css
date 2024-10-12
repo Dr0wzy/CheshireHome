@@ -166,6 +166,10 @@
     justify-content: center;
 }
 
+.mobile-about-us-images {
+    display: none;
+}
+
 .about-us-images-column {
     display: flex;
     flex-direction: column;
@@ -764,33 +768,13 @@ a.footer-link:visited {
         justify-content: center;
     }
     
-    .about-us-images-column {
-        display: flex;
-        flex-direction: column;
-        gap: 2%;
-        flex: 1;
-    }
-    
-    .about-us-images img {
+    .about-us-images {
         max-width: 300px;
+        display: none;
     }
-    .about-us-images-row {
-        width: 50%;
-        border-radius: 8px;
-        flex-direction: row;
-        display: flex;
-        flex: 1;
-        gap: 2%;
-        object-fit: cover;
-    }
-    .about-us-images-row img {
-        /* Set this to take up the combined height of the two images in the other column */
-        flex-grow: 1; /* Makes sure the image grows to match the other column's height */
-    }
-    
-    .about-us-images-column img {
-        height: 50%; /* Each image in the column takes up 50% of the height */
-        object-fit: cover;
+
+    .mobile-about-us-images {
+        display: block;
     }
     
     .about-us-text {
