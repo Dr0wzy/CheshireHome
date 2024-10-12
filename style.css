@@ -769,12 +769,17 @@ a.footer-link:visited {
     }
     
     .about-us-images {
-        max-width: 300px;
         display: none;
     }
 
     .mobile-about-us-images {
         display: block;
+        margin-bottom: 8vh;
+    }
+
+    .mobile-about-us-images img {
+        height: auto;
+        max-width: 100%;
     }
     
     .about-us-text {
@@ -788,15 +793,19 @@ a.footer-link:visited {
         align-items: flex-start;
     }
     
+    .text-header {
+        margin-bottom: 20vh;
+    }
+
     .text-header span {
+        font-family: montserrat;
         font-size: 20px;
         font-weight: bold;
         color: #5d5b5a;
-        margin-bottom: 10px;
     }
     
     .text-title h1 {
-        font-size: 36px;
+        font-size: 5vw;
         color: #333;
         margin-bottom: 15px;
     }
@@ -824,8 +833,11 @@ a.footer-link:visited {
     
     .ESK-arts-production-images img {
         width: 40vw;
+        display: none;
     }
-    
+    .mobile-ESK-arts-production-images{
+        display: block;
+    }
     
     
     .informational-blocks-cards {
@@ -839,12 +851,6 @@ a.footer-link:visited {
         color: #ff6600;
         font-weight: bold;
         align-self: start;
-    }
-    
-    .text-title h1 {
-        font-size: 36px;
-        color: #333;
-        margin-bottom: 3%;
     }
     
     .latest-causes-cards {
