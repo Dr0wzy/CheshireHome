@@ -941,7 +941,7 @@ a.footer-link:visited {
     
     
     .our-testimonials {
-        padding: 10%;
+        padding: 10% 0%;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -953,6 +953,7 @@ a.footer-link:visited {
     }
     
     .our-testimonials-title {
+        font-size: 5vw;
         margin-top: 5vh;
         margin-bottom: 5vh;
         font-family: 'Playfair Display', Times, serif;
@@ -974,6 +975,7 @@ a.footer-link:visited {
     }
     
     .our-testimonials-quote-text {
+        font-size: 4vw;
         max-width: 100%;
         width: auto;
     }
@@ -996,14 +998,14 @@ a.footer-link:visited {
     }
     
     .fun-facts-header {
-        font-size: 1.5rem; /* Relative font size */
+        font-size: 6vw; /* Relative font size */
         font-weight: bold;
         color: #ff6600;
         margin-bottom: 2%;
     }
     
     .fun-facts-title h1 {
-        font-size: 2.5rem; /* Large title text */
+        font-size: 9vw; /* Large title text */
         font-weight: bold;
         color: #333;
         margin-bottom: 2%;
@@ -1038,13 +1040,13 @@ a.footer-link:visited {
         }
     
     .fun-facts-card-value h1 {
-        font-size: 2.5rem; /* Large number value */
+        font-size: 9vw; /* Large number value */
         color: #ff6600;
         margin: 0.5em 0;
     }
     
     .fun-facts-card-title span {
-        font-size: 1.2rem; /* Relative font size for titles */
+        font-size: 5vw; /* Relative font size for titles */
         color: #555;
     }
     
@@ -1144,10 +1146,10 @@ a.footer-link:visited {
     
     .footer-socials-subscribe-form-input input {
         width: 100%;
-        padding: 16px;
+        padding: 10px 16px;
         border: none;
         outline: none;
-        font-size: 1em;
+        font-size: 4vw;
         color: #7c7c7c;
     }
     
@@ -1156,8 +1158,8 @@ a.footer-link:visited {
         border-radius: 0;
         color: white;
         border: none;
-        padding: 14.5px 25px;
-        font-size: 1em;
+        padding: 10px 25px;
+        font-size: 4vw;
         cursor: pointer;
         font-weight: bold;
         white-space: nowrap;
