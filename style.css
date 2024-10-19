@@ -56,6 +56,10 @@ hr {
     display: none;
 }
 
+.mobile-header-settings-side-menu {
+    display: none;
+}
+
 .header-settings-language {
     margin-right: 20px;
 }
