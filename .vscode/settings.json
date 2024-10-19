@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 5502,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.enableImages": true
+}
