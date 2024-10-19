@@ -517,31 +517,41 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding: 5% 12%;
+    gap: 3%;
 }
 
 .footer-logo {
     display: flex;
     flex-direction: row;
     color: #E77B3A;
-    gap: 15%;
+}
+
+.footer-logo img {
+    width: 5vw;
 }
 
 .footer-logo-text {
-    font-size: 0.6rem;
+    font-size: 1.3vw;
+    margin-left: 3vw;
 }
 
+.footer-description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3vw;
+    row-gap: 3vw;
+}
 .footer-quick-link-title {
+    font-size: 2vw;
     color: white;
     font-family: 'Playfair Display', Times, serif;
     margin-bottom: 3vh;
 }
 
 .footer-link {
-    font-size: 0.8rem;
+    font-size: 1.2vw;
     color: #AFAFAF;
     text-decoration: none;
 }
@@ -552,30 +562,38 @@ a.footer-link:visited {
 }
 
 .footer-get-in-touch-title {
-    font-size: 1rem;
+    font-size: 2vw;
     color: white;
     font-family: 'Playfair Display';
     margin-bottom: 3vh;
 }
 
 .footer-get-in-touch {
-    font-size: 0.8em;
+    font-size: 1.2vw;
+    color: #AFAFAF;
+    text-decoration: none;
+}
+
+.footer-address {
+    font-size: 1.2vw;
     color: #AFAFAF;
     text-decoration: none;
 }
 
 .footer-address-title {
-    font-size: 1rem;
+    font-size: 2vw;
     color: white;
     font-family: 'Playfair Display';
     margin-bottom: 3vh;
 }
 
-.footer-address {
-    font-size: 0.8em;
-    color: #AFAFAF;
-    text-decoration: none;
+.footer-address-description {
+    /* max-width: 8vw; */
 }
+
+
+
+
 
 .footer-socials-subscribe-title {
     font-size: 1rem;
@@ -585,7 +603,7 @@ a.footer-link:visited {
 }
 
 .footer-socials-subscribe-form {
-    display: flex;
+    display: flex;  
     max-width: 600px;
     margin: 0 auto;
     border-radius: 1px;
