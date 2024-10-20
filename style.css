@@ -517,7 +517,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5% 12%;
+    padding: 5% 5%;
     gap: 3%;
 }
 
@@ -539,10 +539,11 @@ hr {
 .footer-description {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     column-gap: 3vw;
     row-gap: 3vw;
 }
+
 .footer-quick-link-title {
     font-size: 2vw;
     color: white;
@@ -588,12 +589,8 @@ a.footer-link:visited {
 }
 
 .footer-address-description {
-    /* max-width: 8vw; */
+    max-width: 12vw;
 }
-
-
-
-
 
 .footer-socials-subscribe-title {
     font-size: 1rem;
@@ -642,22 +639,24 @@ a.footer-link:visited {
     font-size: 0.7em;
 }
 
+.footer-socials-follow-us-title {
+    font-size: 2vw;
+    color: white;
+    font-family: 'Playfair Display';
+    margin-bottom: 3vh;
+}
+
 .footer-socials-follow-us-buttons {
     display: flex;
     flex-direction: row;
+    column-gap: 1vw;
 }
 
-.footer-socials-follow-us-buttons div {
-    margin-right: 1vw;
+.footer-socials-follow-us-button img {
+    width: 3vw;
 }
 
-.footer-socials-follow-us-title {
-    font-size: 1rem;
-    color: white;
-    font-family: 'Playfair Display';
-    margin-top: 3vh;
-    margin-bottom: 2vh;
-}
+
 
 
 
@@ -1273,7 +1272,8 @@ a.footer-link:visited {
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row;
-        row-gap: 4vh;
+        row-gap: 6vh;
+
     }
 
     .footer-object-description {
@@ -1282,11 +1282,11 @@ a.footer-link:visited {
         flex-direction: column;
     }
 
-    .footer-quick-link-title h5 {
+    .footer-quick-link-title {
+        font-size: 5vw;
         color: white;
         font-family: 'Playfair Display', Times, serif;
         margin-bottom: 3vh;
-        text-align: left;
     }
 
     .footer-link {
@@ -1301,7 +1301,7 @@ a.footer-link:visited {
     }
 
     .footer-get-in-touch-title {
-        font-size: 1rem;
+        font-size: 5vw;
         color: white;
         font-family: 'Playfair Display';
         margin-bottom: 3vh;
@@ -1314,7 +1314,7 @@ a.footer-link:visited {
     }
 
     .footer-address-title {
-        font-size: 1rem;
+        font-size: 5vw;
         color: white;
         font-family: 'Playfair Display';
         margin-bottom: 3vh;
@@ -1324,6 +1324,10 @@ a.footer-link:visited {
         font-size: 0.8em;
         color: #AFAFAF;
         text-decoration: none;
+    }
+
+    .footer-address-description {
+        max-width: unset;
     }
 
     .footer-socials-subscribe-title {
@@ -1376,18 +1380,16 @@ a.footer-link:visited {
     .footer-socials-follow-us-buttons {
         display: flex;
         flex-direction: row;
+        gap: 5vw;
     }
 
-    .footer-socials-follow-us-buttons div {
-        margin-right: 1vw;
+    .footer-socials-follow-us-button img {
+        width: 10vw;
     }
 
     .footer-socials-follow-us-title {
-        font-size: 1rem;
+        font-size: 5vw;
         color: white;
         font-family: 'Playfair Display';
-        margin-top: 3vh;
-        margin-bottom: 2vh;
     }
-
 }
