@@ -234,7 +234,6 @@ hr {
 }
 
 .footer-link {
-    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
@@ -252,13 +251,11 @@ a.footer-link:visited {
 }
 
 .footer-get-in-touch {
-    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
 
 .footer-address {
-    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
@@ -485,6 +482,7 @@ a.footer-link:visited {
         font-size: 14px;
     }
 
+
     .footer {
         background-color: #22262F;
         display: flex;
@@ -521,20 +519,20 @@ a.footer-link:visited {
     }
 
     .footer-object-description {
-        row-gap: 1vh;
+        row-gap: 1.5vh;
         display: flex;
         flex-direction: column;
+        font-size: 4.5vw;
     }
 
     .footer-quick-link-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display', Times, serif;
         margin-bottom: 3vh;
     }
 
     .footer-link {
-        font-size: 0.8rem;
         color: #AFAFAF;
         text-decoration: none;
     }
@@ -545,27 +543,25 @@ a.footer-link:visited {
     }
 
     .footer-get-in-touch-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display';
         margin-bottom: 3vh;
     }
 
     .footer-get-in-touch {
-        font-size: 0.8em;
         color: #AFAFAF;
         text-decoration: none;
     }
 
     .footer-address-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display';
         margin-bottom: 3vh;
     }
 
     .footer-address {
-        font-size: 0.8em;
         color: #AFAFAF;
         text-decoration: none;
     }
@@ -598,7 +594,7 @@ a.footer-link:visited {
         font-size: 4vw;
         color: #7c7c7c;
     }
-
+s
     .footer-socials-subscribe-form-button button {
         background-color: #f29c60;
         border-radius: 0;
@@ -632,7 +628,7 @@ a.footer-link:visited {
     }
 
     .footer-socials-follow-us-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display';
     }

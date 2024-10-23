@@ -167,6 +167,7 @@ hr {
     flex-direction: column;
     align-items: center;
     padding: 2%;
+    row-gap: 10vh;
 }
 
 
@@ -283,7 +284,7 @@ hr {
 
 
 .ESK-arts-production-images img {
-    width: 40vw;
+    width: 30vw;
     display: block;
 }
 
@@ -318,10 +319,15 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     padding: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
 }
 
 .latest-causes-card-image img {
-    width: 100%;
+    max-width: 100%;
+    width: 12vw;
+    height: 8vw;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -367,6 +373,10 @@ hr {
 .latest-causes-card-donate-goal {
     font-size: 14px;
     margin: 5px 0;
+}
+
+.latest-causes-card-donate-button{
+    padding: 2vh;
 }
 
 .general-button {
@@ -443,12 +453,15 @@ hr {
 
 
 .body-block-3 {
-    padding: 5% 10%;
+    padding: 5%;
     /* Adds responsive padding */
+    display: flex;
+    justify-content: center;
 }
 
 .fun-facts {
     text-align: center;
+    max-width: 60%;
 }
 
 .fun-facts-header {
@@ -542,7 +555,7 @@ hr {
 }
 
 .footer-logo-text {
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     margin-left: 3vw;
 }
 
@@ -554,6 +567,12 @@ hr {
     row-gap: 3vw;
 }
 
+.footer-object-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
 .footer-quick-link-title {
     font-size: 1.5vw;
     color: white;
@@ -562,7 +581,6 @@ hr {
 }
 
 .footer-link {
-    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
@@ -586,7 +604,6 @@ a.footer-link:visited {
 }
 
 .footer-address {
-    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
@@ -663,10 +680,12 @@ a.footer-link:visited {
 }
 
 .footer-socials-follow-us-button img {
-    width: 3vw;
+    width: 2.5vw;
 }
 
-
+.footer-object-description{
+    row-gap: 1.5vh;
+}
 
 
 
@@ -915,6 +934,7 @@ a.footer-link:visited {
         flex-direction: row;
         align-items: center;
         margin-bottom: 8vh;
+        max-width: 90%;
     }
 
     .informational-blocks-images {
@@ -1037,10 +1057,14 @@ a.footer-link:visited {
         max-width: 300px;
         margin-block: 8%;
         padding: 7%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
     }
 
     .latest-causes-card-image img {
         width: 100%;
+        height: auto;
         border-radius: 8px;
         object-fit: cover;
     }
@@ -1086,6 +1110,10 @@ a.footer-link:visited {
     .latest-causes-card-donate-goal {
         font-size: 14px;
         margin: 5px 0;
+    }
+
+    .latest-causes-card-donate-button{
+        padding: 2vh;
     }
 
     .general-button {
@@ -1175,6 +1203,7 @@ a.footer-link:visited {
     .fun-facts {
         text-align: center;
         margin-bottom: 5%;
+        max-width: 100%;
     }
 
     .fun-facts-header {
@@ -1299,7 +1328,6 @@ a.footer-link:visited {
     }
 
     .footer-link {
-        font-size: 0.8rem;
         color: #AFAFAF;
         text-decoration: none;
     }
@@ -1317,7 +1345,6 @@ a.footer-link:visited {
     }
 
     .footer-get-in-touch {
-        font-size: 0.8em;
         color: #AFAFAF;
         text-decoration: none;
     }
@@ -1330,7 +1357,6 @@ a.footer-link:visited {
     }
 
     .footer-address {
-        font-size: 0.8em;
         color: #AFAFAF;
         text-decoration: none;
     }
