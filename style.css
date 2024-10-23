@@ -44,6 +44,11 @@ hr {
     cursor: pointer;
 }
 
+.header-pages span a {
+    text-decoration: none; 
+    color: white;
+}
+
 .header-settings {
     display: flex;
     flex: 1;
@@ -157,7 +162,12 @@ hr {
     border-radius: 10px;
 }
 
-
+.body-block-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
 
 
 
@@ -165,10 +175,10 @@ hr {
 .informational-blocks {
     display: flex;
     justify-content: center;
-    gap: 20px;
-
+    gap: 4%;
     flex-direction: row;
     align-items: center;
+    max-width: 60%;
 }
 
 .informational-blocks-images {
@@ -221,7 +231,6 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 650px;
     height: 50%;
     align-items: flex-start;
 }
@@ -271,6 +280,8 @@ hr {
     background-color: #e65c00;
 }
 
+
+
 .ESK-arts-production-images img {
     width: 40vw;
     display: block;
@@ -306,7 +317,7 @@ hr {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    max-width: 300px;
+    padding: 2%;
 }
 
 .latest-causes-card-image img {
@@ -438,7 +449,6 @@ hr {
 
 .fun-facts {
     text-align: center;
-    margin-bottom: 5%;
 }
 
 .fun-facts-header {
@@ -528,11 +538,11 @@ hr {
 }
 
 .footer-logo img {
-    width: 5vw;
+    width: 4vw;
 }
 
 .footer-logo-text {
-    font-size: 1.3vw;
+    font-size: 0.8vw;
     margin-left: 3vw;
 }
 
@@ -545,14 +555,14 @@ hr {
 }
 
 .footer-quick-link-title {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
     font-family: 'Playfair Display', Times, serif;
     margin-bottom: 3vh;
 }
 
 .footer-link {
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
@@ -563,26 +573,26 @@ a.footer-link:visited {
 }
 
 .footer-get-in-touch-title {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
     font-family: 'Playfair Display';
     margin-bottom: 3vh;
 }
 
 .footer-get-in-touch {
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
 
 .footer-address {
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
 
 .footer-address-title {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
     font-family: 'Playfair Display';
     margin-bottom: 3vh;
@@ -640,7 +650,7 @@ a.footer-link:visited {
 }
 
 .footer-socials-follow-us-title {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
     font-family: 'Playfair Display';
     margin-bottom: 3vh;
@@ -895,7 +905,6 @@ a.footer-link:visited {
 
 
     .body-block-1 {
-        padding: 5%;
         box-sizing: border-box;
     }
 
@@ -935,7 +944,6 @@ a.footer-link:visited {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 650px;
         height: 50%;
         align-items: flex-start;
     }
@@ -1160,7 +1168,7 @@ a.footer-link:visited {
 
 
     .body-block-3 {
-        padding: 5% 10%;
+        padding: 10% 10%;
         /* Adds responsive padding */
     }
 
@@ -1277,13 +1285,14 @@ a.footer-link:visited {
     }
 
     .footer-object-description {
-        row-gap: 1vh;
+        row-gap: 1.5vh;
         display: flex;
         flex-direction: column;
+        font-size: 4.5vw;
     }
 
     .footer-quick-link-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display', Times, serif;
         margin-bottom: 3vh;
@@ -1301,7 +1310,7 @@ a.footer-link:visited {
     }
 
     .footer-get-in-touch-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display';
         margin-bottom: 3vh;
@@ -1314,7 +1323,7 @@ a.footer-link:visited {
     }
 
     .footer-address-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display';
         margin-bottom: 3vh;
@@ -1354,7 +1363,7 @@ a.footer-link:visited {
         font-size: 4vw;
         color: #7c7c7c;
     }
-
+s
     .footer-socials-subscribe-form-button button {
         background-color: #f29c60;
         border-radius: 0;
@@ -1388,7 +1397,7 @@ a.footer-link:visited {
     }
 
     .footer-socials-follow-us-title {
-        font-size: 5vw;
+        font-size: 6.5vw;
         color: white;
         font-family: 'Playfair Display';
     }

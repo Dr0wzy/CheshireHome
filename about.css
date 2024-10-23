@@ -44,6 +44,11 @@ hr {
     cursor: pointer;
 }
 
+.header-pages span a {
+    text-decoration: none; 
+    color: white;
+}
+
 .header-settings {
     display: flex;
     flex: 1;
