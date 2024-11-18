@@ -179,7 +179,7 @@ hr {
     gap: 4%;
     flex-direction: row;
     align-items: center;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .informational-blocks-images {
@@ -233,15 +233,18 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     height: 50%;
-    align-items: flex-start;
 }
 
 .text-header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1vw;
 }
 
+.text-header-width {
+    width: 4vw;
+}
 
 .text-header span {
     font-size: 20px;
@@ -322,11 +325,12 @@ hr {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
+    justify-content: space-between;
 }
 
 .latest-causes-card-image img {
     max-width: 100%;
-    width: 12vw;
+    width: 100%;
     height: 8vw;
     border-radius: 8px;
     object-fit: cover;
@@ -419,6 +423,15 @@ hr {
     text-align: center;
 }
 
+.our-testimonials-header hr {
+    background-color: #ffffff;
+    height: 1px;
+}
+
+.our-testimonials-header span{
+    color: #ffffff;
+}
+
 .our-testimonials-title {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -461,7 +474,7 @@ hr {
 
 .fun-facts {
     text-align: center;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .fun-facts-header {
@@ -498,7 +511,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     min-width: 20%;
     /* Prevents cards from getting too small */
@@ -598,7 +611,6 @@ a.footer-link:visited {
 }
 
 .footer-get-in-touch {
-    font-size: 1vw;
     color: #AFAFAF;
     text-decoration: none;
 }
