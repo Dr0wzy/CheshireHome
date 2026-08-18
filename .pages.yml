@@ -1,0 +1,535 @@
+# Pages CMS config. Editors use https://app.pagescms.org — not this file.
+media:
+  input: images
+  output: /images
+  rename: safe
+  categories: [image]
+
+settings:
+  commit:
+    identity: user
+    templates:
+      create: "Add {path}"
+      update: "Update {path}"
+      delete: "Remove {path}"
+      rename: "Rename {oldPath} to {newPath}"
+
+content:
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      create: false
+      delete: false
+      rename: false
+    fields:
+      - name: title
+        label: Browser tab title
+        type: string
+      - name: language_label
+        label: Language button
+        type: string
+      - name: donate_label
+        label: Donate button text
+        type: string
+      - name: donate_url
+        label: Donate button link
+        type: string
+        description: Paste a JustGiving, PayPal or other donation page URL. Leave empty if you do not have one yet.
+      - name: logo
+        label: Header logo
+        type: image
+      - name: footer_logo
+        label: Footer logo
+        type: image
+      - name: footer_name_html
+        label: Footer name
+        type: string
+        description: You can use <br> to put each word on its own line.
+      - name: hero_image
+        label: Header background photo
+        type: image
+      - name: nav
+        label: Menu labels
+        type: object
+        fields:
+          - name: home
+            label: Home
+            type: string
+          - name: about
+            label: About
+            type: string
+          - name: contact
+            label: Contact
+            type: string
+          - name: faq
+            label: FAQ
+            type: string
+          - name: turkish
+            label: Turkish version
+            type: string
+      - name: contact
+        label: Phone, email and address
+        type: object
+        fields:
+          - name: phone
+            label: Phone
+            type: string
+          - name: email
+            label: Email
+            type: string
+          - name: address
+            label: Short address (footer)
+            type: string
+          - name: address_long
+            label: Full address (contact page)
+            type: text
+      - name: social
+        label: Social links
+        type: object
+        fields:
+          - name: facebook
+            label: Facebook URL
+            type: string
+          - name: instagram
+            label: Instagram URL
+            type: string
+          - name: twitter
+            label: X / Twitter URL
+            type: string
+      - name: footer
+        label: Footer labels
+        type: object
+        fields:
+          - name: quick_links_title
+            label: Quick links heading
+            type: string
+          - name: get_in_touch_title
+            label: Get in touch heading
+            type: string
+          - name: address_title
+            label: Address heading
+            type: string
+          - name: follow_us_title
+            label: Follow us heading
+            type: string
+          - name: contact_us_label
+            label: Contact us link
+            type: string
+          - name: home_label
+            label: Home link
+            type: string
+          - name: about_label
+            label: About link
+            type: string
+          - name: gallery_label
+            label: Gallery link
+            type: string
+          - name: faq_label
+            label: FAQ link
+            type: string
+
+  - name: pages
+    label: Pages
+    type: group
+    items:
+      - name: home
+        label: Home
+        type: file
+        path: content/home.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            label: Hero title
+            type: string
+          - name: hero_text
+            label: Hero text
+            type: text
+          - name: about
+            label: About section
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: button_label
+                label: Button text
+                type: string
+              - name: button_url
+                label: Button link
+                type: string
+              - name: image_main
+                label: Main photo
+                type: image
+              - name: image_side_1
+                label: Side photo 1
+                type: image
+              - name: image_side_2
+                label: Side photo 2
+                type: image
+          - name: feature
+            label: Featured story
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: image
+                label: Photo
+                type: image
+              - name: image_mobile
+                label: Mobile photo
+                type: image
+              - name: stats
+                label: Progress figures
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: label
+                    label: Label
+                    type: string
+                  - name: value
+                    label: Amount
+                    type: string
+                  - name: percent
+                    label: Progress (0-100)
+                    type: number
+          - name: causes
+            label: Causes
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: items
+                label: Cause cards
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: image
+                    label: Photo
+                    type: image
+                  - name: category
+                    label: Category
+                    type: string
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: description
+                    label: Description
+                    type: text
+                  - name: percent
+                    label: Donated percent (0-100)
+                    type: number
+                  - name: raised
+                    label: Amount raised
+                    type: string
+                  - name: goal
+                    label: Goal
+                    type: string
+                  - name: button_label
+                    label: Button text
+                    type: string
+          - name: testimonials
+            label: Testimonials
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: items
+                label: Quotes
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{author}"
+                fields:
+                  - name: author
+                    label: Name
+                    type: string
+                  - name: text
+                    label: Quote
+                    type: text
+          - name: facts
+            label: Facts
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: items
+                label: Fact cards
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: icon
+                    label: Icon
+                    type: image
+                  - name: value
+                    label: Number
+                    type: string
+                  - name: label
+                    label: Label
+                    type: string
+
+      - name: about
+        label: About
+        type: file
+        path: content/about.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            label: Page title
+            type: string
+          - name: about
+            label: About section
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: button_label
+                label: Button text
+                type: string
+              - name: button_url
+                label: Button link
+                type: string
+              - name: image_main
+                label: Main photo
+                type: image
+              - name: image_side_1
+                label: Side photo 1
+                type: image
+              - name: image_side_2
+                label: Side photo 2
+                type: image
+          - name: feature
+            label: Featured story
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: image
+                label: Photo
+                type: image
+              - name: image_mobile
+                label: Mobile photo
+                type: image
+              - name: stats
+                label: Progress figures
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: label
+                    label: Label
+                    type: string
+                  - name: value
+                    label: Amount
+                    type: string
+                  - name: percent
+                    label: Progress (0-100)
+                    type: number
+          - name: services
+            label: Services / facts
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: items
+                label: Cards
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: icon
+                    label: Icon
+                    type: image
+                  - name: value
+                    label: Number
+                    type: string
+                  - name: label
+                    label: Label
+                    type: string
+          - name: gallery
+            label: Gallery
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: images
+                label: Photos
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "Photo {index}"
+                fields:
+                  - name: image
+                    label: Photo
+                    type: image
+
+      - name: contact
+        label: Contact
+        type: file
+        path: content/contact.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            label: Page title
+            type: string
+          - name: label
+            label: Small heading
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: address_heading
+            label: Address heading
+            type: string
+          - name: form
+            label: Form labels
+            type: object
+            fields:
+              - name: first_name
+                label: First name placeholder
+                type: string
+              - name: last_name
+                label: Last name placeholder
+                type: string
+              - name: email
+                label: Email placeholder
+                type: string
+              - name: phone
+                label: Phone placeholder
+                type: string
+              - name: message
+                label: Message placeholder
+                type: string
+              - name: submit_label
+                label: Send button
+                type: string
+
+      - name: faq
+        label: FAQ
+        type: file
+        path: content/faq.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            label: Page title
+            type: string
+          - name: intro
+            label: Introduction
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: text
+              - name: image
+                label: Photo
+                type: image
+              - name: image_mobile
+                label: Mobile photo
+                type: image
+          - name: questions
+            label: Questions
+            type: object
+            list:
+              collapsible:
+                collapsed: false
+                summary: "{question}"
+            fields:
+              - name: question
+                label: Question
+                type: string
+              - name: answer
+                label: Answer
+                type: text
+          - name: help
+            label: Still need help
+            type: object
+            fields:
+              - name: label
+                label: Small heading
+                type: string
+              - name: title
+                label: Title
+                type: string
