@@ -1,0 +1,61 @@
+{
+  "hero_title": "About Us",
+  "about": {
+    "label": "About Us",
+    "title": "Your Support Is Really Powerful",
+    "text": "The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless.",
+    "button_label": "Read More",
+    "button_url": "./about.html",
+    "image_main": "/images/about_us.jpg",
+    "image_side_1": "/images/latestcases1.png",
+    "image_side_2": "/images/latestcases.png"
+  },
+  "feature": {
+    "label": "ESK Performing Arts Production 2023",
+    "title": "Saturday Night fever",
+    "text": "We are proud to announce that with the help and support of everyone in our ESK community, the ESK Performing Arts Production has raised a total of 22,250 TL for Şampiyon Melekleri Yaşatma Derneği, and 16,369 TL has been raised for our local charity Cheshire Home Kyrenia. We are hugely grateful for your support, thank you ESK family!",
+    "image": "/images/esk_arts_production.png",
+    "image_mobile": "/images/latestcases2.jpg",
+    "stats": [
+      {
+        "label": "Şampiyon Melekleri Yaşatma Derneği",
+        "value": "22,250tl",
+        "percent": 80
+      },
+      {
+        "label": "Cheshire Home Kyrenia",
+        "value": "16,369tl",
+        "percent": 20
+      }
+    ]
+  },
+  "services": {
+    "label": "About",
+    "title": "Our Services",
+    "items": [
+      {
+        "icon": "/images/icon1.png",
+        "value": "4597+",
+        "label": "People Rised"
+      },
+      {
+        "icon": "/images/icon2.png",
+        "value": "8945+",
+        "label": "Volunteer"
+      },
+      {
+        "icon": "/images/icon3.png",
+        "value": "500+",
+        "label": "Service Centres"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Our Gallery",
+    "images": [
+      {
+        "image": "/images/gallery.png"
+      }
+    ]
+  }
+}

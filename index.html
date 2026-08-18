@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height, 
-                      width=device-width, initial-scale=1.0, 
-                      minimum-scale=1.0, maximum-scale=1.0, 
+    <meta name="viewport" content="height=device-height,
+                      width=device-width, initial-scale=1.0,
+                      minimum-scale=1.0, maximum-scale=1.0,
                       user-scalable=no, target-densitydpi=device-dpi">
     <meta name="color-scheme" content="light">
     <title>Cheshire Home</title>
@@ -18,47 +18,47 @@
     <div id="mobileHeaderSettingsSideMenu" class="mobile-header-settings-side-menu">
         <a href="javascript:void(0)" class="mobile-header-settings-side-menu-close-button"
             id="mobileHeaderSettingsSideMenuCloseButton">&times;</a>
-        <a href="#">Turkish Version</a>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact us</a>
-        <a href="./faq.html">FAQ</a>
-        <button class="mobile-header-settings-side-menu-donate-button">Donate</button>
+        <a href="#" data-cms="site.nav.turkish">Turkish Version</a>
+        <a href="./index.html" data-cms="site.nav.home">Home</a>
+        <a href="./about.html" data-cms="site.nav.about">About</a>
+        <a href="./contact.html" data-cms="site.nav.contact">Contact us</a>
+        <a href="./faq.html" data-cms="site.nav.faq">FAQ</a>
+        <button type="button" class="mobile-header-settings-side-menu-donate-button" data-cms-donate data-cms="site.donate_label">Donate</button>
     </div>
 
     <div id="siteContent" class="site-content">
         <div class="header-extended">
             <div class="header">
                 <div class="header-logo">
-                    <img src=".\images\cheshire_homes_logo.png">
+                    <img src="/images/cheshire_homes_logo.png" alt="Cheshire Home" data-cms="site.logo" data-cms-type="src">
                 </div>
                 <div class="header-pages">
-                    <span><a href="./index.html">Home</a></span>
-                    <span><a href="./about.html">About</a></span>
-                    <span><a href="./contact.html">Contact us</a></span>
-                    <span><a href="./faq.html">FAQ</a></span>
+                    <span><a href="./index.html" data-cms="site.nav.home">Home</a></span>
+                    <span><a href="./about.html" data-cms="site.nav.about">About</a></span>
+                    <span><a href="./contact.html" data-cms="site.nav.contact">Contact us</a></span>
+                    <span><a href="./faq.html" data-cms="site.nav.faq">FAQ</a></span>
                 </div>
                 <div class="header-settings">
 
                     <div class="mobile-header-settings">
                         <img id="mobileHeaderSettingsHamburger" class="mobile-header-settings-hamburger"
-                            src="./images/hamburger_menu_with_background.png" alt="Menu">
+                            src="/images/hamburger_menu_with_background.png" alt="Menu">
                     </div>
 
                     <div class="header-settings-language">
-                        <span>En 🔽</span>
+                        <span data-cms="site.language_label">En 🔽</span>
                     </div>
                     <div class="header-settings-donate">
-                        <button class="general-button">Donate</button>
+                        <button type="button" class="general-button" data-cms-donate data-cms="site.donate_label">Donate</button>
                     </div>
                 </div>
             </div>
             <div class="header-extended-body-text">
                 <div class="header-extended-body-text-title">
-                    <h1>Change The Way You See Disability</h1>
+                    <h1 data-cms="hero_title">Change The Way You See Disability</h1>
                 </div>
                 <div class="header-extended-body-text-description">
-                    <p>
+                    <p data-cms="hero_text">
                         Cheshire Home was established in the UK in 1948 by Leonard Cheshire to provide support services
                         with
                         persons with disabilities to enhance their quality of life. Currently, there are over 500
@@ -70,7 +70,7 @@
             <div class="header-extended-background-left">
 
             </div>
-            <div class="header-extended-background-right">
+            <div class="header-extended-background-right" data-cms="site.hero_image" data-cms-type="bg">
 
             </div>
         </div>
@@ -79,36 +79,36 @@
             <div class="informational-blocks">
                 <div class="about-us-images">
                     <div class="about-us-images-row">
-                        <img src="./images/about_us.jpg">
+                        <img src="/images/about_us.jpg" alt="" data-cms="about.image_main" data-cms-type="src">
                         <div class="about-us-images-column">
-                            <img src="./images/latestcases1.png">
-                            <img src="./images/latestcases.png">
+                            <img src="/images/latestcases1.png" alt="" data-cms="about.image_side_1" data-cms-type="src">
+                            <img src="/images/latestcases.png" alt="" data-cms="about.image_side_2" data-cms-type="src">
                         </div>
                     </div>
                 </div>
 
                 <div class="about-us-text">
                     <div class="text-header">
-                        <span>About Us </span>
+                        <span data-cms="about.label">About Us </span>
                         <div class="text-header-width">
                             <hr>
                         </div>
                     </div>
                     <div class="mobile-about-us-images">
-                        <img src="./images/about_us.jpg">
+                        <img src="/images/about_us.jpg" alt="" data-cms="about.image_main" data-cms-type="src">
                     </div>
                     <div class="text-title">
-                        <h1>Your Support Is Really Powerful</h1>
+                        <h1 data-cms="about.title">Your Support Is Really Powerful</h1>
                     </div>
                     <div class="text-description">
-                        <p>
+                        <p data-cms="about.text">
                             The secret to happiness lies in helping others. Never
                             underestimate the difference YOU can make in the
                             lives of the poor, the abused and the helpless.
                         </p>
                     </div>
                     <div class="about-us-text-button">
-                        <button class="general-button">Read More</button>
+                        <a class="general-button" href="./about.html" data-cms="about.button_label" data-cms-href="about.button_url">Read More</a>
                     </div>
                 </div>
             </div>
@@ -116,19 +116,19 @@
             <div class="informational-blocks">
                 <div class="ESK-arts-production-text">
                     <div class="text-header">
-                        <span>ESK Performing Arts Production 2023</span>
+                        <span data-cms="feature.label">ESK Performing Arts Production 2023</span>
                         <div class="text-header-width">
                             <hr>
                         </div>
                     </div>
                     <div class="mobile-ESK-arts-production-images">
-                        <img src="./images/latestcases2.jpg">
+                        <img src="/images/latestcases2.jpg" alt="" data-cms="feature.image_mobile" data-cms-type="src">
                     </div>
                     <div class="text-title">
-                        <h1>Saturday Night fever</h1>
+                        <h1 data-cms="feature.title">Saturday Night fever</h1>
                     </div>
                     <div class="text-description">
-                        <p>
+                        <p data-cms="feature.text">
                             We are proud to announce that with the help and support of
                             everyone in our ESK community, the ESK Performing Arts Production
                             has raised a total of 22,250 TL for Şampiyon Melekleri Yaşatma
@@ -137,7 +137,14 @@
                             family!
                         </p>
                     </div>
-                    <div class="ESK-arts-production-text-slider text-description">
+                    <div class="ESK-arts-production-text-slider text-description" data-cms-list="feature.stats">
+                        <template>
+                            <span data-cms="label"></span>
+                            <span data-cms="value"></span>
+                            <div class="slider">
+                                <input type="range" min="0" max="100" value="0" disabled data-cms="percent" data-cms-type="value">
+                            </div>
+                        </template>
                         <span>Şampiyon Melekleri Yaşatma Derneği</span>
                         <span>22,250tl</span>
                         <div class="slider">
@@ -146,12 +153,12 @@
                         <span>Cheshire Home Kyrenia</span>
                         <span>16,369tl</span>
                         <div class="slider">
-                            <input type="range" min="1" max="100" value="2x0" disabled>
+                            <input type="range" min="1" max="100" value="20" disabled>
                         </div>
                     </div>
                 </div>
                 <div class="ESK-arts-production-images">
-                    <img src="./images/esk_arts_production.png">
+                    <img src="/images/esk_arts_production.png" alt="" data-cms="feature.image" data-cms-type="src">
 
                 </div>
             </div>
@@ -159,19 +166,44 @@
             <div class="informational-blocks">
                 <div class="causes-titles">
                     <div class="text-header">
-                        <span>Latest Causes</span>
+                        <span data-cms="causes.label">Latest Causes</span>
                         <div class="text-header-width">
                             <hr>
                         </div>
                     </div>
                     <div class="text-title" id="latest-causes">
-                        <h1>Find the popular cause and donate to them</h1>
+                        <h1 data-cms="causes.title">Find the popular cause and donate to them</h1>
                     </div>
-                    <div class="latest-causes-cards">
-                        <!-- Card 1 -->
+                    <div class="latest-causes-cards" data-cms-list="causes.items">
+                        <template>
+                            <div class="latest-causes-card">
+                                <div class="latest-causes-card-image">
+                                    <img src="" alt="" data-cms="image" data-cms-type="src">
+                                </div>
+                                <div class="latest-causes-card-header">
+                                    <span data-cms="category"></span>
+                                </div>
+                                <div class="latest-causes-card-title">
+                                    <h1 data-cms="title"></h1>
+                                </div>
+                                <div class="latest-causes-card-description">
+                                    <p data-cms="description"></p>
+                                </div>
+                                <div class="latest-causes-card-donate">
+                                    <span>Donated:</span>
+                                    <span><span data-cms="percent"></span>%</span>
+                                    <input type="range" min="0" max="100" value="0" disabled data-cms="percent" data-cms-type="value">
+                                    <span>Raised: <span data-cms="raised"></span></span><br>
+                                    <span>Goal: <span data-cms="goal"></span></span>
+                                    <div class="latest-causes-card-donate-button">
+                                        <button type="button" class="general-button" data-cms-donate data-cms="button_label"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
                         <div class="latest-causes-card">
                             <div class="latest-causes-card-image">
-                                <img src="./images/latestcases1.png">
+                                <img src="/images/latestcases1.png" alt="">
                             </div>
                             <div class="latest-causes-card-header">
                                 <span>Medical</span>
@@ -189,85 +221,7 @@
                                 <span>Raised: $600</span><br>
                                 <span>Goal: $1,000</span>
                                 <div class="latest-causes-card-donate-button">
-                                    <button class="general-button">Donate Now</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="latest-causes-card">
-                            <div class="latest-causes-card-image">
-                                <img src="./images/latestcases2.jpg">
-                            </div>
-                            <div class="latest-causes-card-header">
-                                <span>Homeless</span>
-                            </div>
-                            <div class="latest-causes-card-title">
-                                <h1>Children we work with</h1>
-                            </div>
-                            <div class="latest-causes-card-description">
-                                <p>Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....</p>
-                            </div>
-                            <div class="latest-causes-card-donate">
-                                <span>Donated:</span>
-                                <span>60%</span>
-                                <input type="range" min="1" max="100" value="85" disabled>
-                                <span>Raised: $8,500</span><br>
-                                <span>Goal: $10,000</span>
-                                <div class="latest-causes-card-donate-button">
-                                    <button class="general-button">Donate Now</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="latest-causes-card">
-                            <div class="latest-causes-card-image">
-                                <img src="./images/latestcases3.jpg">
-                            </div>
-                            <div class="latest-causes-card-header">
-                                <span>Education</span>
-                            </div>
-                            <div class="latest-causes-card-title">
-                                <h1>Help for education</h1>
-                            </div>
-                            <div class="latest-causes-card-description">
-                                <p>Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....</p>
-                            </div>
-                            <div class="latest-causes-card-donate">
-                                <span>Donated:</span>
-                                <span>90%</span>
-                                <input type="range" min="1" max="100" value="90" disabled>
-                                <span>Raised: $9,000</span><br>
-                                <span>Goal: $10,000</span>
-                                <div class="latest-causes-card-donate-button">
-                                    <button class="general-button">Donate Now</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="latest-causes-card">
-                            <div class="latest-causes-card-image">
-                                <img src="./images/latestcases4.jpg">
-                            </div>
-                            <div class="latest-causes-card-header">
-                                <span>Food</span>
-                            </div>
-                            <div class="latest-causes-card-title">
-                                <h1>Help for food</h1>
-                            </div>
-                            <div class="latest-causes-card-description">
-                                <p>Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonumy....</p>
-                            </div>
-                            <div class="latest-causes-card-donate">
-                                <span>Donated:</span>
-                                <span>75%</span>
-                                <input type="range" min="1" max="100" value="75" disabled>
-                                <span>Raised: $1,500</span><br>
-                                <span>Goal: $2,000</span>
-                                <div class="latest-causes-card-donate-button">
-                                    <button class="general-button">Donate Now</button>
+                                    <button type="button" class="general-button">Donate Now</button>
                                 </div>
                             </div>
                         </div>
@@ -282,32 +236,32 @@
                     <div class="text-header-width">
                         <hr>
                     </div>
-                    <span> Our Testimonials </span>
+                    <span data-cms="testimonials.label"> Our Testimonials </span>
                     <div class="text-header-width">
                         <hr>
                     </div>
                 </div>
                 <div class="our-testimonials-title">
-                    <h1>What People Say</h1>
+                    <h1 data-cms="testimonials.title">What People Say</h1>
                 </div>
                 <div class="our-testimonials-quote">
-                    <div class="our-testimonials-quote-arrow-left">
-                        <img src="./images/arrow_left.png">
+                    <div class="our-testimonials-quote-arrow-left" data-testimonial-prev>
+                        <img src="/images/arrow_left.png" alt="Previous">
                     </div>
                     <div class="our-testimonials-quote-text">
                         <div class="our-testimonials-quote-text-author">
-                            <span>Year 9 student, Melisa</span>
+                            <span data-testimonial-author data-cms="testimonials.items.0.author">Year 9 student, Melisa</span>
                         </div>
                         <div class="our-testimonials-quote-text-text">
-                            <p>
+                            <p data-testimonial-text data-cms="testimonials.items.0.text">
                                 Year 9 student, Melisa stated: “ It was lovely to see so many smiles when we greeted the
                                 guests of Cheshire Home. I look forward to spending more time with them and visiting
                                 Cheshire Home again soon."
                             </p>
                         </div>
                     </div>
-                    <div class="our-testimonials-quote-arrow-right">
-                        <img src="./images/arrow_right.png">
+                    <div class="our-testimonials-quote-arrow-right" data-testimonial-next>
+                        <img src="/images/arrow_right.png" alt="Next">
                     </div>
                 </div>
             </div>
@@ -316,61 +270,34 @@
         <div class="body-block-3">
             <div class="fun-facts">
                 <div class="fun-facts-header">
-                    <span>Our Fun Facts</span>
+                    <span data-cms="facts.label">Our Fun Facts</span>
                 </div>
                 <div class="fun-facts-title">
-                    <h1>We Believe That We Can Save More Lives With You</h1>
+                    <h1 data-cms="facts.title">We Believe That We Can Save More Lives With You</h1>
                 </div>
-                <div class="fun-facts-cards">
-                    <!-- Card 1 -->
+                <div class="fun-facts-cards" data-cms-list="facts.items">
+                    <template>
+                        <div class="fun-facts-card">
+                            <div class="fun-facts-card-image">
+                                <img src="" alt="" data-cms="icon" data-cms-type="src">
+                            </div>
+                            <div class="fun-facts-card-value">
+                                <h1 data-cms="value"></h1>
+                            </div>
+                            <div class="fun-facts-card-title">
+                                <span data-cms="label"></span>
+                            </div>
+                        </div>
+                    </template>
                     <div class="fun-facts-card">
                         <div class="fun-facts-card-image">
-                            <img src=".\images\icon1.png" alt="Icon 1">
+                            <img src="/images/icon1.png" alt="Icon 1">
                         </div>
                         <div class="fun-facts-card-value">
                             <h1>4597+</h1>
                         </div>
                         <div class="fun-facts-card-title">
                             <span>People Rised</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="fun-facts-card">
-                        <div class="fun-facts-card-image">
-                            <img src=".\images\icon2.png" alt="Icon 2">
-                        </div>
-                        <div class="fun-facts-card-value">
-                            <h1>8945+</h1>
-                        </div>
-                        <div class="fun-facts-card-title">
-                            <span>Volunteer</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="fun-facts-card">
-                        <div class="fun-facts-card-image">
-                            <img src=".\images\icon3.png" alt="Icon 3">
-                        </div>
-                        <div class="fun-facts-card-value">
-                            <h1>500+</h1>
-                        </div>
-                        <div class="fun-facts-card-title">
-                            <span>Service Centres</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="fun-facts-card">
-                        <div class="fun-facts-card-image">
-                            <img src=".\images\icon4.png" alt="Icon 4">
-                        </div>
-                        <div class="fun-facts-card-value">
-                            <h1>60+</h1>
-                        </div>
-                        <div class="fun-facts-card-title">
-                            <span>Countries Operating In</span>
                         </div>
                     </div>
                 </div>
@@ -380,96 +307,81 @@
         <div class="footer">
             <div class="footer-logo">
                 <div class="footer-logo-image">
-                    <img src="./images/footer_logo.png">
+                    <img src="/images/footer_logo.png" alt="Cheshire Home" data-cms="site.footer_logo" data-cms-type="src">
                 </div>
                 <div class="footer-logo-text">
-                    <h1>Cheshire<br>Home<br>Kyrenia</h1>
+                    <h1 data-cms="site.footer_name_html" data-cms-type="html">Cheshire<br>Home<br>Kyrenia</h1>
                 </div>
             </div>
             <div class="footer-description">
                 <div class="footer-quick-link">
                     <div class="footer-quick-link-title">
-                        <h5>Quick Link</h5>
+                        <h5 data-cms="site.footer.quick_links_title">Quick Link</h5>
                     </div>
                     <div class="footer-object-description">
                         <div class="footer-quick-link-home">
-                            <a class="footer-link" href="#">Home</a>
+                            <a class="footer-link" href="./index.html" data-cms="site.footer.home_label">Home</a>
                         </div>
                         <div class="footer-quick-link-about-us">
-                            <a class="footer-link" href="#">About Us</a>
+                            <a class="footer-link" href="./about.html" data-cms="site.footer.about_label">About Us</a>
                         </div>
                         <div class="footer-quick-link-photo-gallery">
-                            <a class="footer-link" href="#">Photo Gallery</a>
+                            <a class="footer-link" href="./about.html#gallery" data-cms="site.footer.gallery_label">Photo Gallery</a>
                         </div>
                         <div class="footer-quick-link-about-faq">
-                            <a class="footer-link" href="#">FAQ</a>
+                            <a class="footer-link" href="./faq.html" data-cms="site.footer.faq_label">FAQ</a>
                         </div>
                     </div>
                 </div>
                 <div class="footer-get-in-touch">
                     <div class="footer-get-in-touch-title">
-                        <h5>Get In Touch</h5>
+                        <h5 data-cms="site.footer.get_in_touch_title">Get In Touch</h5>
                     </div>
                     <div class="footer-object-description">
                         <div class="footer-get-in-touch-description">
-                            <span><a href="./contact.html" class="footer-link" style="text-decoration: none;" ;>Contact
+                            <span><a href="./contact.html" class="footer-link" style="text-decoration: none;" data-cms="site.footer.contact_us_label">Contact
                                     Us</a></span>
                         </div>
                         <div class="footer-get-in-touch-phone">
-                            <span>+90 392 815 37 71</span>
+                            <span data-cms="site.contact.phone">+90 392 815 37 71</span>
                         </div>
                         <div class="footer-get-in-touch-mail">
-                            <span>Cheshire.cyprus@gmail.com</span>
+                            <span data-cms="site.contact.email">Cheshire.cyprus@gmail.com</span>
                         </div>
                     </div>
                 </div>
                 <div class="footer-address">
                     <div class="footer-address-title">
-                        <h5>Address</h5>
+                        <h5 data-cms="site.footer.address_title">Address</h5>
                     </div>
                     <div class="footer-address-description">
-                        <span>Kurtulus Caddesi, Kazafani, Cyprus</span>
+                        <span data-cms="site.contact.address">Kurtulus Caddesi, Kazafani, Cyprus</span>
                     </div>
                 </div>
                 <div class="footer-socials-follow-us">
                     <div class="footer-socials-follow-us-title">
-                        <h5>Follow Us</h5>
+                        <h5 data-cms="site.footer.follow_us_title">Follow Us</h5>
                     </div>
                     <div class="footer-socials-follow-us-buttons">
                         <div class="footer-socials-follow-us-facebook">
-                            <a href="https://www.facebook.com/CheshireHomeKyrenia/" class="footer-socials-follow-us-button"><img src="./images/facebook.png"></a>
+                            <a href="https://www.facebook.com/CheshireHomeKyrenia/" class="footer-socials-follow-us-button" data-cms="site.social.facebook" data-cms-type="href"><img src="/images/facebook.png" alt="Facebook"></a>
                         </div>
                         <div class="footer-socials-follow-us-instagram">
-                            <a href="https://www.instagram.com/cheshirehomeky/" class="footer-socials-follow-us-button"><img src="./images/instagram.png"></a>
+                            <a href="https://www.instagram.com/cheshirehomeky/" class="footer-socials-follow-us-button" data-cms="site.social.instagram" data-cms-type="href"><img src="/images/instagram.png" alt="Instagram"></a>
                         </div>
                         <div class="footer-socials-follow-us-x">
-                            <a href="#" class="footer-socials-follow-us-button"><img src="./images/x.png"></a>
+                            <a href="#" class="footer-socials-follow-us-button" data-cms="site.social.twitter" data-cms-type="href"><img src="/images/x.png" alt="X"></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-socials">
-                <!-- <div class="footer-socials-subscribe">
-                    <div class="footer-socials-subscribe-title">
-                        <h5>Subscribe</h5>
-                    </div>
-                    <div class="footer-socials-subscribe-form">
-                        <div class="footer-socials-subscribe-form-input">
-                            <input type="email" placeholder="Enter Your Email">
-                        </div>
-                        <div class="footer-socials-subscribe-form-button">
-                            <button class="general-button">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="footer-socials-subscribe-description">
-                        <span>Your email is safe with us. We don't spam.</span>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
 
 
+    <script src="content.js"></script>
     <script src="script.js"></script>
 
 

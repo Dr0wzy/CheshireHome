@@ -1440,3 +1440,74 @@ s
         font-family: 'Playfair Display';
     }
 }
+
+a.general-button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.our-testimonials-quote-arrow-left,
+.our-testimonials-quote-arrow-right {
+    cursor: pointer;
+}
+
+.gallery {
+    width: 80%;
+    margin: 40px auto 80px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 24px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.gallery-images img {
+    max-width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.faq-list {
+    width: 80%;
+    margin: 20px auto 40px;
+}
+
+.faq-item {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e0db;
+}
+
+.faq-item h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.faq-help-contact {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.faq-help-contact a {
+    color: #f29c60;
+}

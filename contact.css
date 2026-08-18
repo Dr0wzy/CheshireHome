@@ -633,3 +633,11 @@ s
         font-family: 'Playfair Display';
     }
 }
+
+.contact-info address {
+    white-space: pre-line;
+}
+
+.contact-info-email {
+    margin-top: 16px;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Cheshire Home Kyrenia</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="/images/footer_logo.png">
 </head>
 
 <body>
@@ -13,50 +14,50 @@
     <div id="mobileHeaderSettingsSideMenu" class="mobile-header-settings-side-menu">
         <a href="javascript:void(0)" class="mobile-header-settings-side-menu-close-button"
             id="mobileHeaderSettingsSideMenuCloseButton">&times;</a>
-        <a href="#">Turkish Version</a>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact us</a>
-        <a href="./faq.html">FAQ</a>
-        <button class="mobile-header-settings-side-menu-donate-button">Donate</button>
+        <a href="#" data-cms="site.nav.turkish">Turkish Version</a>
+        <a href="./index.html" data-cms="site.nav.home">Home</a>
+        <a href="./about.html" data-cms="site.nav.about">About</a>
+        <a href="./contact.html" data-cms="site.nav.contact">Contact us</a>
+        <a href="./faq.html" data-cms="site.nav.faq">FAQ</a>
+        <button type="button" class="mobile-header-settings-side-menu-donate-button" data-cms-donate data-cms="site.donate_label">Donate</button>
     </div>
 
     <div id="siteContent" class="site-content">
         <div class="header-extended">
             <div class="header">
                 <div class="header-logo">
-                    <img src=".\images\cheshire_homes_logo.png">
+                    <img src="/images/cheshire_homes_logo.png" alt="Cheshire Home" data-cms="site.logo" data-cms-type="src">
                 </div>
                 <div class="header-pages">
-                    <span><a href="./index.html">Home</a></span>
-                    <span><a href="./about.html">About</a></span>
-                    <span><a href="./contact.html">Contact us</a></span>
-                    <span><a href="./faq.html">FAQ</a></span>
+                    <span><a href="./index.html" data-cms="site.nav.home">Home</a></span>
+                    <span><a href="./about.html" data-cms="site.nav.about">About</a></span>
+                    <span><a href="./contact.html" data-cms="site.nav.contact">Contact us</a></span>
+                    <span><a href="./faq.html" data-cms="site.nav.faq">FAQ</a></span>
                 </div>
                 <div class="header-settings">
 
                     <div class="mobile-header-settings">
                         <img id="mobileHeaderSettingsHamburger" class="mobile-header-settings-hamburger"
-                            src="./images/hamburger_menu_with_background.png" alt="Menu">
+                            src="/images/hamburger_menu_with_background.png" alt="Menu">
                     </div>
 
                     <div class="header-settings-language">
-                        <span>En 🔽</span>
+                        <span data-cms="site.language_label">En 🔽</span>
                     </div>
                     <div class="header-settings-donate">
-                        <button class="general-button">Donate</button>
+                        <button type="button" class="general-button" data-cms-donate data-cms="site.donate_label">Donate</button>
                     </div>
                 </div>
             </div>
             <div class="header-extended-body-text">
                 <div class="header-extended-body-text-title">
-                    <h1>Contact Us</h1>
+                    <h1 data-cms="hero_title">Contact Us</h1>
                 </div>
             </div>
             <div class="header-extended-background-left">
 
             </div>
-            <div class="header-extended-background-right">
+            <div class="header-extended-background-right" data-cms="site.hero_image" data-cms-type="bg">
 
             </div>
         </div>
@@ -65,36 +66,35 @@
             <div class="contact-us">
                 <div class="contact-us-text">
                     <div class="contact-us-text-header">
-                        <span>Get In Touch</span>
+                        <span data-cms="label">Get In Touch</span>
                         <hr width="15%">
                     </div>
                     <div class="contact-us-text-title">
-                        <h1>Send Us A Message</h1>
+                        <h1 data-cms="title">Send Us A Message</h1>
                     </div>
                 </div>
                 <div class="contact-us-text-body">
                     <div class="contact-form">
                         <form>
-                            <input type="text" placeholder="First name" required>
-                            <input type="text" placeholder="Last name" required>
-                            <input type="email" placeholder="Email" required>
-                            <input type="text" placeholder="Phone" required>
-                            <textarea placeholder="Your Message here..." rows="6" required></textarea>
-                            <button type="submit">Send Message</button>
+                            <input type="text" placeholder="First name" required data-cms="form.first_name" data-cms-type="placeholder">
+                            <input type="text" placeholder="Last name" required data-cms="form.last_name" data-cms-type="placeholder">
+                            <input type="email" placeholder="Email" required data-cms="form.email" data-cms-type="placeholder">
+                            <input type="text" placeholder="Phone" required data-cms="form.phone" data-cms-type="placeholder">
+                            <textarea placeholder="Your Message here..." rows="6" required data-cms="form.message" data-cms-type="placeholder"></textarea>
+                            <button type="submit" data-cms="form.submit_label">Send Message</button>
                         </form>
                     </div>
 
                     <div class="contact-info">
-                        <h2>Address</h2>
-                        <address>
+                        <h2 data-cms="address_heading">Address</h2>
+                        <address data-cms="site.contact.address_long">
                             Cheshire Home Kyrenia<br>
                             Guzelyurt Mahallesi No:6, Kyrenia<br>
                             Cyprus<br>
                             Location: Next to Martyr's Monument, opposite<br>
-                            Akpinar Mansion.<br>
-                            <br>
-                            Email: contact@cheshirekyrenia.com
+                            Akpinar Mansion.
                         </address>
+                        <p class="contact-info-email">Email: <span data-cms="site.contact.email">Cheshire.cyprus@gmail.com</span></p>
                     </div>
                 </div>
             </div>
@@ -102,70 +102,70 @@
         <div class="footer">
             <div class="footer-logo">
                 <div class="footer-logo-image">
-                    <img src="./images/footer_logo.png">
+                    <img src="/images/footer_logo.png" alt="Cheshire Home" data-cms="site.footer_logo" data-cms-type="src">
                 </div>
                 <div class="footer-logo-text">
-                    <h1>Cheshire<br>Home<br>Kyrenia</h1>
+                    <h1 data-cms="site.footer_name_html" data-cms-type="html">Cheshire<br>Home<br>Kyrenia</h1>
                 </div>
             </div>
             <div class="footer-description">
                 <div class="footer-quick-link">
                     <div class="footer-quick-link-title">
-                        <h5>Quick Link</h5>
+                        <h5 data-cms="site.footer.quick_links_title">Quick Link</h5>
                     </div>
                     <div class="footer-object-description">
                         <div class="footer-quick-link-home">
-                            <a class="footer-link" href="#">Home</a>
+                            <a class="footer-link" href="./index.html" data-cms="site.footer.home_label">Home</a>
                         </div>
                         <div class="footer-quick-link-about-us">
-                            <a class="footer-link" href="#">About Us</a>
+                            <a class="footer-link" href="./about.html" data-cms="site.footer.about_label">About Us</a>
                         </div>
                         <div class="footer-quick-link-photo-gallery">
-                            <a class="footer-link" href="#">Photo Gallery</a>
+                            <a class="footer-link" href="./about.html#gallery" data-cms="site.footer.gallery_label">Photo Gallery</a>
                         </div>
                         <div class="footer-quick-link-about-faq">
-                            <a class="footer-link" href="#">FAQ</a>
+                            <a class="footer-link" href="./faq.html" data-cms="site.footer.faq_label">FAQ</a>
                         </div>
                     </div>
                 </div>
                 <div class="footer-get-in-touch">
                     <div class="footer-get-in-touch-title">
-                        <h5>Get In Touch</h5>
+                        <h5 data-cms="site.footer.get_in_touch_title">Get In Touch</h5>
                     </div>
                     <div class="footer-object-description">
                         <div class="footer-get-in-touch-description">
-                            <span><a href="./contact.html" style="text-decoration: none; color: #555" ;>Contact
+                            <span><a href="./contact.html" style="text-decoration: none; color: #555" data-cms="site.footer.contact_us_label">Contact
                                     Us</a></span>
                         </div>
                         <div class="footer-get-in-touch-phone">
-                            <span>+90 392 815 37 71</span>
+                            <span data-cms="site.contact.phone">+90 392 815 37 71</span>
                         </div>
                         <div class="footer-get-in-touch-mail">
-                            <span>Cheshire.cyprus@gmail.com</span>
+                            <span data-cms="site.contact.email">Cheshire.cyprus@gmail.com</span>
                         </div>
                     </div>
                 </div>
                 <div class="footer-address">
                     <div class="footer-address-title">
-                        <h5>Address</h5>
+                        <h5 data-cms="site.footer.address_title">Address</h5>
                     </div>
                     <div class="footer-address-description">
-                        <span>Kurtulus Caddesi, Kazafani, Cyprus</span>
+                        <span data-cms="site.contact.address">Kurtulus Caddesi, Kazafani, Cyprus</span>
                     </div>
                 </div>
                 <div class="footer-socials-follow-us">
                     <div class="footer-socials-follow-us-title">
-                        <h5>Follow Us</h5>
+                        <h5 data-cms="site.footer.follow_us_title">Follow Us</h5>
                     </div>
                     <div class="footer-socials-follow-us-buttons">
                         <div class="footer-socials-follow-us-facebook">
-                            <a href="#" class="footer-socials-follow-us-button"><img src="./images/facebook.png"></a>
+                            <a href="https://www.facebook.com/CheshireHomeKyrenia/" class="footer-socials-follow-us-button" data-cms="site.social.facebook" data-cms-type="href"><img src="/images/facebook.png" alt="Facebook"></a>
                         </div>
                         <div class="footer-socials-follow-us-instagram">
-                            <a href="#" class="footer-socials-follow-us-button"><img src="./images/instagram.png"></a>
+                            <a href="https://www.instagram.com/cheshirehomeky/" class="footer-socials-follow-us-button" data-cms="site.social.instagram" data-cms-type="href"><img src="/images/instagram.png" alt="Instagram"></a>
                         </div>
                         <div class="footer-socials-follow-us-x">
-                            <a href="#" class="footer-socials-follow-us-button"><img src="./images/x.png"></a>
+                            <a href="#" class="footer-socials-follow-us-button" data-cms="site.social.twitter" data-cms-type="href"><img src="/images/x.png" alt="X"></a>
                         </div>
                     </div>
                 </div>
@@ -173,6 +173,7 @@
         </div>
     </div>
 
+    <script src="content.js"></script>
     <script src="script.js"></script>
 
 </body>

@@ -1,0 +1,28 @@
+{
+  "hero_title": "Frequently Asked Questions",
+  "intro": {
+    "label": "Have Any Questions?",
+    "title": "Frequently Asked Questions",
+    "text": "If you cannot find the answer you need below, please call or email us. We are happy to help.",
+    "image": "/images/esk_arts_production.png",
+    "image_mobile": "/images/latestcases2.jpg"
+  },
+  "questions": [
+    {
+      "question": "Where is Cheshire Home Kyrenia?",
+      "answer": "Kurtulus Caddesi, Kazafani, Cyprus. Next to Martyr's Monument, opposite Akpinar Mansion."
+    },
+    {
+      "question": "How can I get in touch?",
+      "answer": "Call +90 392 815 37 71 or email Cheshire.cyprus@gmail.com."
+    },
+    {
+      "question": "How can I donate or volunteer?",
+      "answer": "Use the Donate button on the website, or contact us by phone or email if you would like to volunteer."
+    }
+  ],
+  "help": {
+    "label": "Still Need Help",
+    "title": "Reach Out to Us"
+  }
+}
