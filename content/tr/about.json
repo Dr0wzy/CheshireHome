@@ -1,0 +1,48 @@
+{
+  "hero_title": "Hakkımızda",
+  "about": {
+    "label": "Hakkımızda",
+    "title": "Desteğiniz Gerçekten Güçlü",
+    "text": "Mutluluğun sırrı başkalarına yardım etmektir. Yoksul, istismara uğramış ve yardıma ihtiyacı olan insanların hayatında sizin yaratabileceğiniz farkı asla küçümsemeyin.",
+    "button_label": "Devamını Oku",
+    "button_url": "./about.html"
+  },
+  "feature": {
+    "label": "ESK Sahne Sanatları Gösterisi 2023",
+    "title": "Saturday Night Fever",
+    "text": "ESK topluluğunun desteğiyle Sahne Sanatları Gösterisi, Şampiyon Melekleri Yaşatma Derneği için 22.250 TL, yerel hayır kurumumuz Cheshire Home Kyrenia için 16.369 TL topladı. Desteğiniz için ESK ailesine teşekkür ederiz.",
+    "stats": [
+      {
+        "label": "Şampiyon Melekleri Yaşatma Derneği",
+        "value": "22,250tl",
+        "percent": 80
+      },
+      {
+        "label": "Cheshire Home Kyrenia",
+        "value": "16,369tl",
+        "percent": 20
+      }
+    ]
+  },
+  "services": {
+    "label": "Hakkımızda",
+    "title": "Hizmetlerimiz",
+    "items": [
+      {
+        "value": "4597+",
+        "label": "Desteklenen kişi"
+      },
+      {
+        "value": "8945+",
+        "label": "Gönüllü"
+      },
+      {
+        "value": "500+",
+        "label": "Hizmet merkezi"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galerimiz"
+  }
+}

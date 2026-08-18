@@ -28,9 +28,6 @@ content:
       - name: title
         label: Browser tab title
         type: string
-      - name: language_label
-        label: Language button
-        type: string
       - name: donate_label
         label: Donate button text
         type: string
@@ -38,6 +35,19 @@ content:
         label: Donate button link
         type: string
         description: Paste a JustGiving, PayPal or other donation page URL. Leave empty if you do not have one yet.
+      - name: labels
+        label: Other labels
+        type: object
+        fields:
+          - name: donated
+            label: Donated
+            type: string
+          - name: raised
+            label: Raised
+            type: string
+          - name: goal
+            label: Goal
+            type: string
       - name: logo
         label: Header logo
         type: image
@@ -66,9 +76,6 @@ content:
             type: string
           - name: faq
             label: FAQ
-            type: string
-          - name: turkish
-            label: Turkish version
             type: string
       - name: contact
         label: Phone, email and address
@@ -532,4 +539,292 @@ content:
                 type: string
               - name: title
                 label: Title
+                type: string
+
+  - name: turkish
+    label: Turkish
+    type: group
+    items:
+      - name: tr-ui
+        label: Menus and buttons
+        type: file
+        path: content/tr/ui.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: title
+            label: Browser tab title
+            type: string
+          - name: donate_label
+            label: Donate button text
+            type: string
+          - name: labels
+            label: Other labels
+            type: object
+            fields:
+              - name: donated
+                label: Donated
+                type: string
+              - name: raised
+                label: Raised
+                type: string
+              - name: goal
+                label: Goal
+                type: string
+          - name: nav
+            label: Menu labels
+            type: object
+            fields:
+              - name: home
+                type: string
+              - name: about
+                type: string
+              - name: contact
+                type: string
+              - name: faq
+                type: string
+          - name: footer
+            label: Footer labels
+            type: object
+            fields:
+              - name: quick_links_title
+                type: string
+              - name: get_in_touch_title
+                type: string
+              - name: address_title
+                type: string
+              - name: follow_us_title
+                type: string
+              - name: contact_us_label
+                type: string
+              - name: home_label
+                type: string
+              - name: about_label
+                type: string
+              - name: gallery_label
+                type: string
+              - name: faq_label
+                type: string
+      - name: tr-home
+        label: Home
+        type: file
+        path: content/tr/home.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            type: string
+          - name: hero_text
+            type: text
+          - name: about
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: text
+                type: text
+              - name: button_label
+                type: string
+          - name: feature
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: text
+                type: text
+              - name: stats
+                type: object
+                list: true
+                fields:
+                  - name: label
+                    type: string
+                  - name: value
+                    type: string
+                  - name: percent
+                    type: number
+          - name: causes
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: items
+                type: object
+                list: true
+                fields:
+                  - name: category
+                    type: string
+                  - name: title
+                    type: string
+                  - name: description
+                    type: text
+                  - name: percent
+                    type: number
+                  - name: raised
+                    type: string
+                  - name: goal
+                    type: string
+                  - name: button_label
+                    type: string
+          - name: testimonials
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: items
+                type: object
+                list: true
+                fields:
+                  - name: author
+                    type: string
+                  - name: text
+                    type: text
+          - name: facts
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: items
+                type: object
+                list: true
+                fields:
+                  - name: value
+                    type: string
+                  - name: label
+                    type: string
+      - name: tr-about
+        label: About
+        type: file
+        path: content/tr/about.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            type: string
+          - name: about
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: text
+                type: text
+              - name: button_label
+                type: string
+          - name: feature
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: text
+                type: text
+          - name: services
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: items
+                type: object
+                list: true
+                fields:
+                  - name: value
+                    type: string
+                  - name: label
+                    type: string
+          - name: gallery
+            type: object
+            fields:
+              - name: title
+                type: string
+      - name: tr-contact
+        label: Contact
+        type: file
+        path: content/tr/contact.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            type: string
+          - name: label
+            type: string
+          - name: title
+            type: string
+          - name: address_heading
+            type: string
+          - name: form
+            type: object
+            fields:
+              - name: first_name
+                type: string
+              - name: last_name
+                type: string
+              - name: email
+                type: string
+              - name: phone
+                type: string
+              - name: message
+                type: string
+              - name: submit_label
+                type: string
+      - name: tr-faq
+        label: FAQ
+        type: file
+        path: content/tr/faq.json
+        format: json
+        operations:
+          create: false
+          delete: false
+          rename: false
+        fields:
+          - name: hero_title
+            type: string
+          - name: intro
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
+                type: string
+              - name: text
+                type: text
+          - name: questions
+            type: object
+            list: true
+            fields:
+              - name: question
+                type: string
+              - name: answer
+                type: text
+          - name: help
+            type: object
+            fields:
+              - name: label
+                type: string
+              - name: title
                 type: string

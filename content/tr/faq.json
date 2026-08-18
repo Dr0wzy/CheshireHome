@@ -1,0 +1,26 @@
+{
+  "hero_title": "Sıkça Sorulan Sorular",
+  "intro": {
+    "label": "Sorunuz mu var?",
+    "title": "Sıkça Sorulan Sorular",
+    "text": "Aradığınız yanıtı aşağıda bulamazsanız lütfen bizi arayın veya e-posta gönderin. Yardımcı olmaktan memnuniyet duyarız."
+  },
+  "questions": [
+    {
+      "question": "Cheshire Home Kyrenia nerede?",
+      "answer": "Guzelyurt Mahallesi No:6, Kazafani, Kyrenia, Cyprus. Şehitler Anıtı'nın yanında, Akpinar Konağı'nın karşısında."
+    },
+    {
+      "question": "Nasıl iletişim kurabilirim?",
+      "answer": "+90 392 815 37 71 numaralı telefonu arayabilir veya Cheshire.cyprus@gmail.com adresine e-posta gönderebilirsiniz."
+    },
+    {
+      "question": "Nasıl bağış yapabilir veya gönüllü olabilirim?",
+      "answer": "Sitedeki Bağış Yap düğmesini kullanın. Gönüllü olmak isterseniz telefon veya e-posta ile bize ulaşın."
+    }
+  ],
+  "help": {
+    "label": "Hâlâ yardıma mı ihtiyacınız var?",
+    "title": "Bize Ulaşın"
+  }
+}

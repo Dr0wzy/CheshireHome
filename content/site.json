@@ -4,21 +4,24 @@
   "footer_logo": "/images/footer_logo.png",
   "footer_name_html": "Cheshire<br>Home<br>Kyrenia",
   "hero_image": "/images/cheshire_intro_picture.jpg",
-  "language_label": "En 🔽",
   "donate_label": "Donate",
   "donate_url": "",
+  "labels": {
+    "donated": "Donated",
+    "raised": "Raised",
+    "goal": "Goal"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
     "contact": "Contact us",
-    "faq": "FAQ",
-    "turkish": "Turkish Version"
+    "faq": "FAQ"
   },
   "contact": {
     "phone": "+90 392 815 37 71",
     "email": "Cheshire.cyprus@gmail.com",
-    "address": "Kurtulus Caddesi, Kazafani, Cyprus",
-    "address_long": "Cheshire Home Kyrenia\nGuzelyurt Mahallesi No:6, Kyrenia\nCyprus\nLocation: Next to Martyr's Monument, opposite\nAkpinar Mansion."
+    "address": "Guzelyurt Mahallesi No:6, Kazafani, Kyrenia, Cyprus",
+    "address_long": "Cheshire Home Kyrenia\nGuzelyurt Mahallesi No:6, Kazafani, Kyrenia, Cyprus\nNext to Martyr's Monument, opposite Akpinar Mansion."
   },
   "social": {
     "facebook": "https://www.facebook.com/CheshireHomeKyrenia/",

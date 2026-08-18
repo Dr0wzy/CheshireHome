@@ -1,0 +1,14 @@
+{
+  "hero_title": "İletişim",
+  "label": "Bize Ulaşın",
+  "title": "Mesaj Gönderin",
+  "address_heading": "Adres",
+  "form": {
+    "first_name": "Ad",
+    "last_name": "Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "message": "Mesajınız...",
+    "submit_label": "Gönder"
+  }
+}

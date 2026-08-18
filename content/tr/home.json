@@ -1,0 +1,102 @@
+{
+  "hero_title": "Engelliliğe Bakış Açınızı Değiştirin",
+  "hero_text": "Cheshire Home, 1948 yılında Leonard Cheshire tarafından İngiltere'de, engelli bireylerin yaşam kalitesini artırmak için kuruldu. Bugün 57 ülkede 500'den fazla hizmet merkezi bulunmaktadır.",
+  "about": {
+    "label": "Hakkımızda",
+    "title": "Desteğiniz Gerçekten Güçlü",
+    "text": "Mutluluğun sırrı başkalarına yardım etmektir. Yoksul, istismara uğramış ve yardıma ihtiyacı olan insanların hayatında sizin yaratabileceğiniz farkı asla küçümsemeyin.",
+    "button_label": "Devamını Oku",
+    "button_url": "./about.html"
+  },
+  "feature": {
+    "label": "ESK Sahne Sanatları Gösterisi 2023",
+    "title": "Saturday Night Fever",
+    "text": "ESK topluluğunun desteğiyle Sahne Sanatları Gösterisi, Şampiyon Melekleri Yaşatma Derneği için 22.250 TL, yerel hayır kurumumuz Cheshire Home Kyrenia için 16.369 TL topladı. Desteğiniz için ESK ailesine teşekkür ederiz.",
+    "stats": [
+      {
+        "label": "Şampiyon Melekleri Yaşatma Derneği",
+        "value": "22,250tl",
+        "percent": 80
+      },
+      {
+        "label": "Cheshire Home Kyrenia",
+        "value": "16,369tl",
+        "percent": 20
+      }
+    ]
+  },
+  "causes": {
+    "label": "Güncel Çalışmalar",
+    "title": "Popüler bir çalışmayı seçin ve destek olun",
+    "items": [
+      {
+        "category": "Sağlık",
+        "title": "Tedavi ve ilaç desteği",
+        "description": "İhtiyacı olan kişilerin tedavi ve ilaç masraflarına katkıda bulunun.",
+        "percent": 60,
+        "raised": "$600",
+        "goal": "$1,000",
+        "button_label": "Şimdi Bağış Yap"
+      },
+      {
+        "category": "Barınma",
+        "title": "Birlikte çalıştığımız çocuklar",
+        "description": "Merkezimizdeki çocuklar ve misafirler için desteğinize ihtiyacımız var.",
+        "percent": 85,
+        "raised": "$8,500",
+        "goal": "$10,000",
+        "button_label": "Şimdi Bağış Yap"
+      },
+      {
+        "category": "Eğitim",
+        "title": "Eğitim için yardım",
+        "description": "Eğitim ve gelişim programlarına katkıda bulunun.",
+        "percent": 90,
+        "raised": "$9,000",
+        "goal": "$10,000",
+        "button_label": "Şimdi Bağış Yap"
+      },
+      {
+        "category": "Gıda",
+        "title": "Gıda yardımı",
+        "description": "Günlük gıda ve temel ihtiyaç desteğine katkıda bulunun.",
+        "percent": 75,
+        "raised": "$1,500",
+        "goal": "$2,000",
+        "button_label": "Şimdi Bağış Yap"
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Yorumlar",
+    "title": "İnsanlar Ne Diyor",
+    "items": [
+      {
+        "author": "9. sınıf öğrencisi Melisa",
+        "text": "Cheshire Home misafirlerini karşılarken o kadar çok gülümseme görmek harikaydı. Onlarla daha fazla vakit geçirmeyi ve yakında tekrar ziyaret etmeyi dört gözle bekliyorum."
+      }
+    ]
+  },
+  "facts": {
+    "label": "Rakamlarla",
+    "title": "Sizinle birlikte daha fazla hayata dokunabileceğimize inanıyoruz",
+    "items": [
+      {
+        "value": "4597+",
+        "label": "Desteklenen kişi"
+      },
+      {
+        "value": "8945+",
+        "label": "Gönüllü"
+      },
+      {
+        "value": "500+",
+        "label": "Hizmet merkezi"
+      },
+      {
+        "value": "60+",
+        "label": "Faaliyet gösterilen ülke"
+      }
+    ]
+  }
+}

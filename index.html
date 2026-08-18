@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="cms-loading">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="height=device-height,
-                      width=device-width, initial-scale=1.0,
-                      minimum-scale=1.0, maximum-scale=1.0,
-                      user-scalable=no, target-densitydpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <title>Cheshire Home</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./polish.css">
     <link rel="icon" type="image/png" href="/images/footer_logo.png">
+    <noscript><style>html.cms-loading body{opacity:1}</style></noscript>
+    <script>setTimeout(function(){document.documentElement.classList.add("cms-ready");document.documentElement.classList.remove("cms-loading");},2500);</script>
 </head>
 
 <body>
@@ -18,7 +18,11 @@
     <div id="mobileHeaderSettingsSideMenu" class="mobile-header-settings-side-menu">
         <a href="javascript:void(0)" class="mobile-header-settings-side-menu-close-button"
             id="mobileHeaderSettingsSideMenuCloseButton">&times;</a>
-        <a href="#" data-cms="site.nav.turkish">Turkish Version</a>
+        <div class="language-switch" aria-label="Language">
+            <button type="button" data-lang="en">EN</button>
+            <span aria-hidden="true">|</span>
+            <button type="button" data-lang="tr">TR</button>
+        </div>
         <a href="./index.html" data-cms="site.nav.home">Home</a>
         <a href="./about.html" data-cms="site.nav.about">About</a>
         <a href="./contact.html" data-cms="site.nav.contact">Contact us</a>
@@ -46,7 +50,11 @@
                     </div>
 
                     <div class="header-settings-language">
-                        <span data-cms="site.language_label">En 🔽</span>
+                        <div class="language-switch" aria-label="Language">
+                            <button type="button" data-lang="en">EN</button>
+                            <span aria-hidden="true">|</span>
+                            <button type="button" data-lang="tr">TR</button>
+                        </div>
                     </div>
                     <div class="header-settings-donate">
                         <button type="button" class="general-button" data-cms-donate data-cms="site.donate_label">Donate</button>
@@ -190,11 +198,11 @@
                                     <p data-cms="description"></p>
                                 </div>
                                 <div class="latest-causes-card-donate">
-                                    <span>Donated:</span>
+                                    <span><span data-cms="site.labels.donated">Donated</span>:</span>
                                     <span><span data-cms="percent"></span>%</span>
                                     <input type="range" min="0" max="100" value="0" disabled data-cms="percent" data-cms-type="value">
-                                    <span>Raised: <span data-cms="raised"></span></span><br>
-                                    <span>Goal: <span data-cms="goal"></span></span>
+                                    <span><span data-cms="site.labels.raised">Raised</span>: <span data-cms="raised"></span></span><br>
+                                    <span><span data-cms="site.labels.goal">Goal</span>: <span data-cms="goal"></span></span>
                                     <div class="latest-causes-card-donate-button">
                                         <button type="button" class="general-button" data-cms-donate data-cms="button_label"></button>
                                     </div>
@@ -355,7 +363,7 @@
                         <h5 data-cms="site.footer.address_title">Address</h5>
                     </div>
                     <div class="footer-address-description">
-                        <span data-cms="site.contact.address">Kurtulus Caddesi, Kazafani, Cyprus</span>
+                        <span data-cms="site.contact.address">Guzelyurt Mahallesi No:6, Kazafani, Kyrenia, Cyprus</span>
                     </div>
                 </div>
                 <div class="footer-socials-follow-us">

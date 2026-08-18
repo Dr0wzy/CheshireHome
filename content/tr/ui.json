@@ -1,0 +1,26 @@
+{
+  "title": "Cheshire Home",
+  "donate_label": "Bağış Yap",
+  "labels": {
+    "donated": "Bağış",
+    "raised": "Toplanan",
+    "goal": "Hedef"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "faq": "SSS"
+  },
+  "footer": {
+    "quick_links_title": "Hızlı Bağlantı",
+    "get_in_touch_title": "İletişim",
+    "address_title": "Adres",
+    "follow_us_title": "Bizi Takip Edin",
+    "contact_us_label": "Bize Ulaşın",
+    "home_label": "Ana Sayfa",
+    "about_label": "Hakkımızda",
+    "gallery_label": "Fotoğraf Galerisi",
+    "faq_label": "SSS"
+  }
+}
