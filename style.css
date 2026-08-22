@@ -1472,8 +1472,7 @@ a.general-button {
 .gallery-images img {
     max-width: 100%;
     height: auto;
-    max-height: 520px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .faq-list {

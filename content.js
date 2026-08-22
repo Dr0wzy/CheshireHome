@@ -83,6 +83,10 @@
       case "value":
         el.value = value;
         break;
+      case "progress":
+        el.setAttribute("aria-valuenow", value);
+        el.style.setProperty("--progress", Number(value) + "%");
+        break;
       case "placeholder":
         el.setAttribute("placeholder", value);
         break;

@@ -13,23 +13,9 @@ body {
     overflow-x: hidden;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-.header-logo img {
-    width: auto;
-    height: 52px;
-    max-width: 180px;
-    object-fit: contain;
-}
-
 .header {
     position: relative;
     z-index: 2;
-    padding: 12px 16px 0;
 }
 
 .header-extended-body-text {
@@ -73,55 +59,28 @@ img {
     color: #222;
 }
 
-.about-us-images-row {
-    width: 100%;
-    height: 320px;
-    overflow: hidden;
-}
-
-.about-us-images-row > img,
-.about-us-images-column img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.about-us-images-column {
-    height: 100%;
-    gap: 8px;
-}
-
-.about-us-images-column img {
-    height: calc(50% - 4px);
-}
-
-.about-us-images img {
-    max-width: none;
-}
-
-.mobile-about-us-images img {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
 .ESK-arts-production-images img {
-    width: min(420px, 100%);
-    max-height: 360px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 30vw;
+    max-width: none;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
-.mobile-ESK-arts-production-images img {
+.gallery {
+    width: 80%;
+}
+
+.gallery-images {
     width: 100%;
-    max-width: 520px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 8px;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    object-fit: contain;
 }
 
 .latest-causes-cards {
@@ -136,35 +95,10 @@ img {
     padding: 16px;
 }
 
-.latest-causes-card-image {
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
 .latest-causes-card-image img {
     width: 100%;
-    height: 100%;
+    height: 140px;
     object-fit: cover;
-}
-
-.fun-facts-card img {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    margin-bottom: 12px;
-}
-
-.gallery-images img {
-    width: min(720px, 100%);
-    max-height: 420px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.footer-logo img {
-    width: 48px;
-    height: auto;
 }
 
 .footer-logo-text {
@@ -183,20 +117,39 @@ img {
     max-width: 180px;
 }
 
-.footer-socials-follow-us-button img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+.progress-bar {
+    --progress: 0%;
+    width: 100%;
+    height: 10px;
+    margin: 8px 0 14px;
+    background: #efe7e0;
+    border-radius: 999px;
+    overflow: hidden;
 }
 
-input[type="range"] {
-    width: 100%;
-    accent-color: #ff6600;
+.progress-bar-fill {
+    display: block;
+    width: var(--progress);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #e77b3a 0%, #f49b62 100%);
+}
+
+.ESK-arts-production-text-slider .progress-bar {
+    margin-bottom: 18px;
+}
+
+.latest-causes-card-donate .progress-bar {
+    margin: 10px 0 12px;
 }
 
 @media (max-width: 1100px) {
     .latest-causes-cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ESK-arts-production-images img {
+        width: 38vw;
     }
 }
 
@@ -204,11 +157,6 @@ input[type="range"] {
     .header-settings-language {
         display: flex !important;
         margin-right: 8px;
-    }
-
-    .header-logo img {
-        height: 40px;
-        max-width: 44vw;
     }
 
     .latest-causes-cards {
@@ -223,5 +171,15 @@ input[type="range"] {
 
     .footer-address-description {
         max-width: none;
+    }
+
+    .ESK-arts-production-images img {
+        width: 100%;
+    }
+
+    .mobile-ESK-arts-production-images img {
+        width: 100%;
+        max-width: none;
+        height: auto;
     }
 }
