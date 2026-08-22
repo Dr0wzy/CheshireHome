@@ -82,6 +82,9 @@
         break;
       case "value":
         el.value = value;
+        if (el.type === "range") {
+          el.style.setProperty("--progress", Number(value) + "%");
+        }
         break;
       case "progress":
         el.setAttribute("aria-valuenow", value);
@@ -124,6 +127,10 @@
     root.querySelectorAll("[data-cms-href]").forEach(function (el) {
       const value = get(data, el.getAttribute("data-cms-href"));
       if (value) el.setAttribute("href", value);
+    });
+
+    root.querySelectorAll("input[type='range']").forEach(function (el) {
+      el.style.setProperty("--progress", Number(el.value) + "%");
     });
   }
 

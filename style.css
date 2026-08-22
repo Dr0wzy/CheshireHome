@@ -365,7 +365,8 @@ hr {
     margin-left: 10px;
 }
 
-.latest-causes-card-donate-slider input[type="range"] {
+.latest-causes-card-donate input[type="range"],
+.slider input[type="range"] {
     width: 100%;
     appearance: none;
     background: #ff6600;
@@ -1110,7 +1111,8 @@ a.footer-link:visited {
         margin-left: 10px;
     }
 
-    .latest-causes-card-donate-slider input[type="range"] {
+    .latest-causes-card-donate input[type="range"],
+    .slider input[type="range"] {
         width: 100%;
         appearance: none;
         background: #ff6600;

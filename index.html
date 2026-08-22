@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <title>Cheshire Home</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" type="text/css" href="./polish.css">
+    <link rel="stylesheet" type="text/css" href="./style.css?v=3">
+    <link rel="stylesheet" type="text/css" href="./polish.css?v=3">
     <link rel="icon" type="image/png" href="/images/footer_logo.png">
     <noscript><style>html.cms-loading body{opacity:1}</style></noscript>
     <script>setTimeout(function(){document.documentElement.classList.add("cms-ready");document.documentElement.classList.remove("cms-loading");},2500);</script>
@@ -149,19 +149,19 @@
                         <template>
                             <span data-cms="label"></span>
                             <span data-cms="value"></span>
-                            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-cms="percent" data-cms-type="progress">
-                                <span class="progress-bar-fill"></span>
+                            <div class="slider">
+                                <input type="range" min="0" max="100" value="0" tabindex="-1" data-cms="percent" data-cms-type="value">
                             </div>
                         </template>
                         <span>Şampiyon Melekleri Yaşatma Derneği</span>
                         <span>22,250tl</span>
-                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="--progress: 80%">
-                            <span class="progress-bar-fill"></span>
+                        <div class="slider">
+                            <input type="range" min="0" max="100" value="80" tabindex="-1" style="--progress: 80%">
                         </div>
                         <span>Cheshire Home Kyrenia</span>
                         <span>16,369tl</span>
-                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20" style="--progress: 20%">
-                            <span class="progress-bar-fill"></span>
+                        <div class="slider">
+                            <input type="range" min="0" max="100" value="20" tabindex="-1" style="--progress: 20%">
                         </div>
                     </div>
                 </div>
@@ -200,9 +200,7 @@
                                 <div class="latest-causes-card-donate">
                                     <span><span data-cms="site.labels.donated">Donated</span>:</span>
                                     <span><span data-cms="percent"></span>%</span>
-                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-cms="percent" data-cms-type="progress">
-                                        <span class="progress-bar-fill"></span>
-                                    </div>
+                                    <input type="range" min="0" max="100" value="0" tabindex="-1" data-cms="percent" data-cms-type="value">
                                     <span><span data-cms="site.labels.raised">Raised</span>: <span data-cms="raised"></span></span><br>
                                     <span><span data-cms="site.labels.goal">Goal</span>: <span data-cms="goal"></span></span>
                                     <div class="latest-causes-card-donate-button">
@@ -227,9 +225,7 @@
                             <div class="latest-causes-card-donate">
                                 <span>Donated:</span>
                                 <span>60%</span>
-                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" style="--progress: 60%">
-                                    <span class="progress-bar-fill"></span>
-                                </div>
+                                <input type="range" min="0" max="100" value="60" tabindex="-1" style="--progress: 60%">
                                 <span>Raised: $600</span><br>
                                 <span>Goal: $1,000</span>
                                 <div class="latest-causes-card-donate-button">
@@ -393,7 +389,7 @@
     </div>
 
 
-    <script src="content.js"></script>
+    <script src="content.js?v=3"></script>
     <script src="script.js"></script>
 
 
